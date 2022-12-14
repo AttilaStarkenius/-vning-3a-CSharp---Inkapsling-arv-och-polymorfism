@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PersonSound
+namespace Övning_3a_CSharp___Inkapsling__arv_och_polymorfism
 {
     public abstract class Animal
     {

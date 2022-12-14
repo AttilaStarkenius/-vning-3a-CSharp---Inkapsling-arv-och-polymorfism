@@ -1,31 +1,31 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Övning_3a_CSharp___Inkapsling__arv_och_polymorfism
 {
-    public class Horse : Animal, IPerson
+    public class Wolf : Animal
     {
-        public double Height { get; set; }
-        public Horse(string name, double weight, int age) : base(name, weight, age)
+        public int NumberOfPups { get; set; }
+        public Wolf(string name, double weight, int age, int numberOfPups) : base(name, weight, age)
         {
+            NumberOfPups = numberOfPups;
         }
 
         public override string DoSound()
         {
-            return "huh";
-
+            return "Oooowhooo";
             //throw new NotImplementedException();
         }
 
         public override string Stats()
         {
-            return base.Stats() + $"Height: {Height}";
+            return base.Stats() + $"Number of pups: {NumberOfPups}";
         }
-
-        public string Talk()
-        {
-            return "I'm a horse!";
-        }
-
 
         //public override string Stats(Animal animal)
         //{
@@ -49,4 +49,3 @@ namespace Övning_3a_CSharp___Inkapsling__arv_och_polymorfism
         //}
     }
 }
-

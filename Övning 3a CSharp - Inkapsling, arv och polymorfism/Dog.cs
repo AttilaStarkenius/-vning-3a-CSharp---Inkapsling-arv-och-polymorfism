@@ -1,12 +1,11 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PersonSound
+namespace Övning_3a_CSharp___Inkapsling__arv_och_polymorfism
 {
     public class Dog : Animal
     {
@@ -55,3 +54,4 @@ namespace PersonSound
         //    }
         //}
     }
+}
